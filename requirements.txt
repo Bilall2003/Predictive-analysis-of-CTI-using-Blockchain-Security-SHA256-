@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+sqlalchemy
+scikit-learn
+torch
+streamlit
+flask
+joblib
+nltk
+shaps
