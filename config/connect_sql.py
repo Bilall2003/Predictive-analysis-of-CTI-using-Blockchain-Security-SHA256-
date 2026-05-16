@@ -1,3 +1,7 @@
+import numpy as np
+import pandas as pd
+from create_engine import ENGINE
+
 file_list = ["Monday-WorkingHours.csv", "Tuesday-WorkingHours.csv", "Wednesday-WorkingHours.csv", "Thursday-WorkingHours.csv"]
 
 # this is a flag

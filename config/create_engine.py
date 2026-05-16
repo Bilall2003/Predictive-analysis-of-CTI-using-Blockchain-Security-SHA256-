@@ -5,10 +5,10 @@ from urllib.parse import quote_plus
 import logging
 
 #loading credentials
-DB_USERNAME= 'root'
-DB_PASSWORD= ''
-DB_HOST= 'localhost'
-DB_NAME= 'FYP'
+DB_USERNAME="root"
+DB_PASSWORD="messi@1234"
+DB_HOST="localhost"
+DB_NAME="FYP"
 
 PASSWORD=quote_plus(DB_PASSWORD)
 
