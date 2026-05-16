@@ -1,0 +1,1 @@
+The csv files from Monday to Thursday-Working Hours contains network traffic dataset with substanial file size. Test.csv is reletively smaller than other csv and is used for realtime simulation purposes.
