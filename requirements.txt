@@ -9,4 +9,4 @@ streamlit
 flask
 joblib
 nltk
-shaps
+shap
