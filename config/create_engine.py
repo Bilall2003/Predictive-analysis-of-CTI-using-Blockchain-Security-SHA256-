@@ -5,10 +5,10 @@ from urllib.parse import quote_plus
 import logging
 
 #loading credentials
-DB_USERNAME="root"
-DB_PASSWORD="messi@1234"
-DB_HOST="localhost"
-DB_NAME="FYP"
+DB_USERNAME= 'root'
+DB_PASSWORD= ''
+DB_HOST= 'localhost'
+DB_NAME= 'FYP'
 
 PASSWORD=quote_plus(DB_PASSWORD)
 
@@ -22,16 +22,10 @@ try:
     )
 
     # checks if the connection is a success or not
-    if ENGINE.connect:
+    with ENGINE.connect() as conn:
         
         logging.info("Connection Built Successfully..........")
     
-    else:
-
-        logging.error("Something Went Wrong WHILE **CONNECTING** .Try again")
-# Any sqlalchemy related errors be catched here
 except SQLAlchemyError as e:
-    
-    print('SQLAlchemy error occured.')
-    # shows the exact error
+    print("SQLAlchemy error occurred")
     logging.error(e)
