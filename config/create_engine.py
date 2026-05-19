@@ -1,31 +1,32 @@
-#importing libraries
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 from urllib.parse import quote_plus
 import logging
 
-#loading credentials
-DB_USERNAME= 'root'
-DB_PASSWORD= ''
-DB_HOST= 'localhost'
-DB_NAME= 'FYP'
+logging.basicConfig(
+    level=logging.INFO,  
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-PASSWORD=quote_plus(DB_PASSWORD)
+DB_USERNAME = 'root'
+DB_PASSWORD = 'hanzala@1234'
+DB_HOST = 'localhost'
+DB_NAME = 'cti_fyp'
 
-print('Password successfully encoded.')
+PASSWORD = quote_plus(DB_PASSWORD)
 
 try:
-    # create_engine = an sqlalchemy function that creates a database connection setting up instructions and configuration to connect to mysql
-    # mysql+pymysql:// = tells sqlalchemy to use mysql and use pymysql driver to connect
-    ENGINE=create_engine(
-    f"mysql+pymysql://{DB_USERNAME}:{PASSWORD}@{DB_HOST}/{DB_NAME}"
+    ENGINE = create_engine(
+        f"mysql+pymysql://{DB_USERNAME}:{PASSWORD}@{DB_HOST}/{DB_NAME}"
     )
 
-    # checks if the connection is a success or not
+    # REAL connection test
     with ENGINE.connect() as conn:
-        
-        logging.info("Connection Built Successfully..........")
-    
+        print(f"Connecting to DB: {DB_HOST}/{DB_NAME}")
+        logging.info("Connection Built Successfully")
+
 except SQLAlchemyError as e:
-    print("SQLAlchemy error occurred")
-    logging.error(e)
+    logging.error(f"SQLAlchemy error: {e}")
+
+
+    
