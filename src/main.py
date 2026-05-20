@@ -9,7 +9,7 @@ obj1 = checkin()
 if obj1.check_password():
     # Only if authorized is True, show the dashboard
     obj2 = APP()
-    obj2.protoype()
+    obj2.prototype()
 else:
     # We stay on the login page
     st.info("Please log in to access the NIDS Intelligence Dashboard.")

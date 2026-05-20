@@ -7,6 +7,7 @@ class checkin:
     def check_password(self):
         """Returns True if the user had the correct password."""
         st.set_page_config(layout="centered")
+       
         def password_entered():
             if st.session_state["password"] == "admin123": # Mock password
                 st.session_state["authorized"] = True
@@ -31,3 +32,8 @@ class checkin:
     #     st.sidebar.success(f"Welcome, {st.session_state['username']}")
     #     st.title("Real-Time Hybrid NIDS Dashboard")
     #     # (Rest of your AI and Flow metrics code goes here)
+
+if __name__=="__main__":
+    
+    obj=checkin()
+    obj.check_password()
