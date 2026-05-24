@@ -4,19 +4,17 @@ from create_engine import ENGINE
 from sqlalchemy import text
 
 file_list = [
-    "Monday-WorkingHours.csv",
-    "Tuesday-WorkingHours.csv",
-    "Wednesday-WorkingHours.csv",
-    "Thursday-WorkingHours.csv"
+    r"C:\Users\UMAR.TECH\Desktop\cyber dataset\optimizeddatasets\Final_Tuesday.csv",
+    r"C:\Users\UMAR.TECH\Desktop\cyber dataset\optimizeddatasets\Final_Wednesday.csv",
+    r"C:\Users\UMAR.TECH\Desktop\cyber dataset\optimizeddatasets\Final_Friday.csv"
 ]
 
-# 🔥 STEP 1: RESET TABLE SAFELY
 with ENGINE.begin() as conn:
     conn.execute(text("DROP TABLE IF EXISTS raw_sentiment_data"))
 
 print("✅ Old table dropped. Starting fresh...\n")
 
-# 🔥 STEP 2: LOAD DATA IN CHUNKS
+#  STEP 2: LOAD DATA IN CHUNKS
 for file in file_list:
     print(f"Processing: {file}")
 
