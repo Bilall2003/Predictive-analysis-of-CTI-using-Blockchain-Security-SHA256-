@@ -156,7 +156,7 @@ class NetworkIDSConsole:
                 
             uploaded_file = st.sidebar.file_uploader(
                 "Upload Network Traffic Logs (CSV)", 
-                type=["csv"], 
+                type=["csv","xlsx"], 
                 key=f"file_uploader_{st.session_state.reset_token}"
             )
             
