@@ -1,15 +1,19 @@
-Predictive Analysis of CTI using Blockchain Security (SHA-256)
-📌 Project Overview
+# Predictive Analysis of CTI using Blockchain Security (SHA-256)
+**📌 Project Overview**
 
 The primary objective of this project is to design and develop an intelligent, proactive, and explainable Cyber Threat Intelligence (CTI) system capable of detecting, predicting, and analyzing cyber threats in real time. The system focuses on identifying both known attacks and zero-day (unknown) attacks, while ensuring data integrity, security, and trustworthiness using blockchain-inspired hashing (SHA-256).
 
-The project combines:
+**The project combines:**
 
 Machine Learning (XGBoost for supervised attack classification)
+
 Deep Learning (Autoencoder for anomaly detection)
-Data preprocessing & feature engineering
+
+Data preprocessing & feature 
+
 Blockchain-inspired SHA-256 hashing for integrity validation
-🚀 Key Features
+
+**🚀 Key Features**
 🔐 Blockchain-inspired Data Integrity
 Uses SHA-256 hashing to ensure data has not been tampered with
 Provides trust layer for CTI pipeline
