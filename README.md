@@ -14,28 +14,28 @@ Data preprocessing & feature
 Blockchain-inspired SHA-256 hashing for integrity validation
 
 **🚀 Key Features**
-🔐 Blockchain-inspired Data Integrity
+**🔐 Blockchain-inspired Data Integrity**
 
 Uses SHA-256 hashing to ensure data has not been tampered with
 Provides trust layer for CTI pipeline
 
-🤖 Hybrid Threat Detection System
+**🤖 Hybrid Threat Detection System**
 
 XGBoost for known attack classification (DoS, DDoS, Bot, etc.)
 Autoencoder for zero-day anomaly detection
 
-⚡ Real-Time Simulation Capability
+**⚡ Real-Time Simulation Capability**
 
 Evaluates unseen attack scenarios (e.g., Thursday dataset)
 Detects deviations from normal network behavior
 
-📊 Explainable Security Analytics
+**📊 Explainable Security Analytics**
 
 Reconstruction error-based anomaly scoring
 Attack vs benign separation visualization
 Performance evaluation using Accuracy, F1-score, ROC-AUC
 
-🧠 Machine Learning Approach
+**🧠 Machine Learning Approach**
 
 1. Supervised Learning (XGBoost)
    
@@ -49,7 +49,7 @@ Trained only on benign traffic (Monday dataset)
 Learns normal network behavior
 Flags deviations as anomalies (zero-day detection)
 
-📂 Dataset Description
+**📂 Dataset Description**
 
 Monday: Benign traffic only (used for Autoencoder training)
 Tuesday / Wednesday / Friday: Labeled multi-class attack dataset (used for XGBoost training)
@@ -71,7 +71,7 @@ Web Attacks (XSS, Brute Force)
 
 Infiltration
 
-⚙️ Data Preprocessing Pipeline
+**⚙️ Data Preprocessing Pipeline**
 
 Removal of irrelevant columns:
 Flow ID, Source IP, Destination IP, Ports, Timestamp
@@ -82,13 +82,13 @@ Binary conversion for anomaly detection:
 0 → Benign
 1 → Attack
 
-🧠 Key Insight
+**🧠 Key Insight**
 
 XGBoost performs well on known attacks but struggles with zero-day threats.
 Autoencoder successfully detects unknown attacks based on reconstruction error.
 The hybrid system improves overall CTI robustness.
 
-📌 Technologies Used
+**📌 Technologies Used**
 Python
 
 Pandas, NumPy
@@ -105,14 +105,15 @@ SHA-256 (hashlib)
 
 Jupyter Notebook / Google Colab
 
-📈 Future Improvements
+**📈 Future Improvements**
 
 Integration with real-time network packet capture
 Deployment using FastAPI or Streamlit dashboard
 Blockchain-based distributed CTI sharing
 Transformer-based anomaly detection models
 Federated learning for multi-source threat intelligence
-👨‍💻 Author
+
+**👨‍💻 Author**
 
 Cyber Threat Intelligence Research Project
 Focused on AI-based intrusion detection and secure cyber analytics.
