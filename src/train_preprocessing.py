@@ -4,7 +4,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 import urllib.parse
-from create_engine import ENGINE
+from config.create_engine import ENGINE
 
 query = """
 SELECT *
@@ -42,8 +42,6 @@ df.drop_duplicates(keep='first', inplace=True)
 # %%
 df.info()
 
-# %%
-df_new.shape
 
 # %%
 df=df.reset_index(drop=True)
