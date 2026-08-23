@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/PyTorch-Autoencoder-red?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/SHA--256-Blockchain%20Hashing-2ea44f?style=for-the-badge&logo=blockchaindotcom&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Staging-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-Deployment-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
 </p>
 
 <p>
@@ -252,6 +254,37 @@ CICIDS2017 CSV
   <img src="https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
   <img src="https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
 </p>
+
+---
+
+## 🚢 Deployment
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🐳 Staging — Docker
+- Pipeline and Streamlit dashboard containerized for staging
+- Ensures a consistent, reproducible environment across local dev and testing
+- Used to validate the full hybrid pipeline (XGBoost → DAE → KMeans/DBSCAN → SHAP → NLP → SHA-256 → MySQL → Streamlit) end-to-end before cloud rollout
+
+</td>
+<td width="50%" valign="top">
+
+### ☁️ Production — AWS
+- Staged Docker image promoted to AWS for deployment
+- Cloud hosting for the Streamlit dashboard and MySQL-backed threat store
+- Path forward for scaling real-time detection beyond local/staging limits
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+**Flow:** `Local Development` → `Docker (Staging)` → `AWS (Deployment)`
+
+</div>
 
 ---
 
