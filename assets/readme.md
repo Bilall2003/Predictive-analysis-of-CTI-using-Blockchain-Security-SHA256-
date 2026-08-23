@@ -1,4 +1,4 @@
-The csv files from Monday to Friday-Working Hours contains network traffic dataset with substanial file size.Zerodayattacks.csv is reletively smaller than other csv and is used for realtime simulation purposes for novel attacks to check model capabilities.
+The csv files from Monday to Friday-Working Hours contains network traffic dataset with substantial file size. Zerodayattacks.csv is relatively smaller than other csv and is used for Realtime simulation purposes for novel attacks to check model capabilities.
 
 ## Dataset
 
