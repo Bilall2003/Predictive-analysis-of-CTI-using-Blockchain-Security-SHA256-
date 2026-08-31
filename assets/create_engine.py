@@ -8,10 +8,10 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-DB_USERNAME = 'root'
-DB_PASSWORD = 'hanzala@1234'
-DB_HOST = 'localhost'
-DB_NAME = 'cti_fyp_2'
+DB_USERNAME = 'your username'
+DB_PASSWORD = 'your password'
+DB_HOST = 'your hsot'
+DB_NAME = 'your db_name'
 
 PASSWORD = quote_plus(DB_PASSWORD)
 
