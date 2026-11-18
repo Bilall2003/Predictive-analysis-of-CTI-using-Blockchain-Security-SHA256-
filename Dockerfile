@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8501
 
 # 4) Start the dashboard (change 3mileui.py if your main file has another name)
-CMD ["streamlit", "run", "3mileui.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
